@@ -3,10 +3,10 @@
 ## Source: https://github.com/hexojs/hexo/
 
 # Site
-title: Hexo
-subtitle:
-description:
-keywords:
+title: Hexo1
+subtitle: sub title
+description: desc
+keywords: Vue.js
 author: Aaron Chen 
 language:
 timezone:
@@ -48,8 +48,6 @@ highlight:
 # path: Root path for your blogs index page. (default = '')
 # per_page: Posts displayed per page. (0 = disable pagination)
 # order_by: Posts order. (Order by date descending by default)
-logo:
-  text: 'note'
 index_generator:
   path: ''
   per_page: 10
@@ -62,10 +60,6 @@ auto_excerpt:
 default_category: uncategorized
 category_map:
 tag_map:
-menu:
-  Archive: /archives
-  Tags: /tags
-  About: /about
 
 # Date / Time format
 ## Hexo uses Moment.js to parse and display date

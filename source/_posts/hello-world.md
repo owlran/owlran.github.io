@@ -38,3 +38,7 @@ $ hexo deploy
 ```
 
 More info: [Deployment](https://hexo.io/docs/deployment.html)
+
+### image on hexo
+
+![](/images/test-img.png)

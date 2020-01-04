@@ -1,5 +1,7 @@
 ---
 title: Hexo - 作為備忘
+tags: hexo
+categories: post
 ---
 
 ## notes
