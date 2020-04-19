@@ -1,12 +1,19 @@
 ---
 title: Netlify 部屬 Hexo
-date: 2020-04-19 22:49:08
+date: 2020-04-19T22:49:08.000Z
 tags:
   - hexo
   - netlify
+categories:
+  - ""
 comments: true
 ---
 ## Netlify 設定
+
+透過 netlify CMS 作為後台可以直接編輯 hexo 建立的 blog.
+這邊記錄一下設定的過程.
+
+<!-- more -->
 
 直接到 Netlify 設定 New site from git.
 
