@@ -11,7 +11,8 @@ comments: true
 ## Netlify 設定
 
 透過 netlify CMS 作為後台可以直接編輯 hexo 建立的 blog.
-這邊記錄一下設定的過程.
+
+這邊記錄一下設定的過程.
 
 <!-- more -->
 
@@ -21,24 +22,32 @@ build command 給 `hexo g`
 
 public folder 給 `/public`
 
+![](/images/netlify_cms_build_setting.png "Netlify build setting")
+
 ### Enable Identity
 
 1. Settings > Identity > Enable Identity
-    * 底下有個 Registration, 改成 Invite only
+
+   * 底下有個 Registration, 改成 Invite only
 2. Services > Git Gateway > Enable Git Gateway
 
 ### Hexo 設定
-* netlify build post process
-    * 需要在 header 內加入一行 script tag
-    * 建立 source/admin/index.html, source/admin/config.yml
 
+* netlify build post process
+
+  * 需要在 header 內加入一行 script tag
+  * 建立 source/admin/index.html, source/admin/config.yml
+
+    ![](/images/netlify_cms_post_processing.png)
 
 #### script tag
+
 ```
 <script src="https://identity.netlify.com/v1/netlify-identity-widget.js"></script>
 ```
 
 #### admin/index.html
+
 ```
 <!doctype html>
 <html>
@@ -58,6 +67,7 @@ public folder 給 `/public`
 ```
 
 #### admin/config.yml
+
 ```
 backend:
   name: git-gateway
@@ -90,13 +100,14 @@ collections:
 ```
 
 #### config.yml 底下要 skip render
+
 ```
 skip_render:
   - admin/*
 ```
 
-
 ### CMS user
+
 * 有個地方可以 invite user, 那邊填入自己信箱.
 * 收到信可以設定帳密
 * 直接訪問 site/admin 的url, 就可以登入後台了
