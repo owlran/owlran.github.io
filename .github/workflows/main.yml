@@ -2,7 +2,8 @@ name: Blog CI/CD
 
 on:
   push:
-    branches: [ master, backup ]
+    branches:
+      - backup 
 
 jobs:
   BuildAndDeploy:
