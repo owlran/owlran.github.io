@@ -1,43 +1,39 @@
 'use strict';
 
 module.exports = {
-  url: 'https://lumen.netlify.com',
+  url: 'https://owlran.github.io/',
   pathPrefix: '/',
-  title: 'Blog by John Doe',
-  subtitle: 'Pellentesque odio nisi, euismod in, pharetra a, ultricies in, diam. Sed arcu.',
-  copyright: '© All rights reserved.',
-  disqusShortname: '',
-  postsPerPage: 4,
-  googleAnalyticsId: 'UA-73379983-2',
+  title: 'Aaron\'s note | 前端筆記 | 軟體開發 | Web',
+  subtitle: '前端工程師, 寫下來是為了不要忘記。',
+  copyright: '© 2021 Aaron Chen All rights reserved.',
+  disqusShortname: 'owlran',
+  postsPerPage: 8,
+  googleAnalyticsId: 'UA-164501475-1',
   useKatex: false,
   menu: [
     {
-      label: 'Articles',
+      label: '所有文章',
       path: '/'
     },
     {
-      label: 'About me',
+      label: '關於',
       path: '/pages/about'
     },
-    {
-      label: 'Contact me',
-      path: '/pages/contacts'
-    }
   ],
   author: {
-    name: 'John Doe',
+    name: 'Aaron Chen',
     photo: '/photo.jpg',
-    bio: 'Pellentesque odio nisi, euismod in, pharetra a, ultricies in, diam. Sed arcu.',
+    bio: '前端工程師, 寫下來是為了不要忘記。',
     contacts: {
-      email: '',
-      facebook: '#',
-      telegram: '#',
-      twitter: '#',
-      github: '#',
+      email: 'owlran1088@gmail.com',
+      facebook: '',
+      telegram: 'aaronchen108',
+      twitter: 'owl1911',
+      github: 'owlran',
       rss: '',
       vkontakte: '',
-      linkedin: '#',
-      instagram: '#',
+      linkedin: '',
+      instagram: '',
       line: '',
       gitlab: '',
       weibo: '',

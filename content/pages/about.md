@@ -1,13 +1,15 @@
 ---
-title: "About me"
+title: "關於"
 template: "page"
 socialImage: "/media/image-2.jpg"
 ---
 
-Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Vestibulum tortor quam, feugiat vitae, ultricies eget, tempor sit amet, ante.
+一個生活在台北的前端工程師, 主要技術圍繞著 Vue.js 生態系。
+今年專注在團隊開發流程的改善以及建立一套屬於我們的 UI library。
 
-![Donec eu libero sit amet quam egestas semper. Aenean ultricies mi vitae est. Mauris placerat eleifend leo. Quisque sit amet est et sapien ullamcorper pharetra. Vestibulum erat wisi, condimentum sed, commodo vitae, ornare sit amet, wisi.](/media/image-2.jpg)
+喜歡研究各種生產力工具，目前正在用 Obsidian 打造第二大腦中。
 
-*Donec eu libero sit amet quam egestas semper. Aenean ultricies mi vitae est. Mauris placerat eleifend leo. Quisque sit amet est et sapien ullamcorper pharetra. Vestibulum erat wisi, condimentum sed, commodo vitae, ornare sit amet, wisi.*
+先前 blog 是利用 Hexo + Github Action 放到 github page上，這次改版轉移到 GatsbyJS
+發現先前記錄的 [用 Github action 自動 deploy hexo](#), 有在網路上幫助到其他人，所以決定還是來好好的把一些開發、學習過程筆記整理出來。
 
-Aenean fermentum, elit eget tincidunt condimentum, eros ipsum rutrum orci, sagittis tempus lacus enim ac dui. Donec non enim in turpis pulvinar facilisis. Ut felis. Praesent dapibus, neque id cursus faucibus, tortor neque egestas augue, eu vulputate magna eros eu erat. Aliquam erat volutpat. Nam dui mi, tincidunt quis, accumsan porttitor, facilisis luctus, metus
+要記的太多，只好寫下來吧。
