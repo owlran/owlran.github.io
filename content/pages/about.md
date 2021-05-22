@@ -10,6 +10,6 @@ socialImage: "/media/image-2.jpg"
 喜歡研究各種生產力工具，目前正在用 Obsidian 打造第二大腦中。
 
 先前 blog 是利用 Hexo + Github Action 放到 github page上，這次改版轉移到 GatsbyJS
-發現先前記錄的 [用 Github action 自動 deploy hexo](#), 有在網路上幫助到其他人，所以決定還是來好好的把一些開發、學習過程筆記整理出來。
+發現先前記錄的 [用 Github action 自動 deploy hexo](https://owlran.github.io/posts/using-github-action-to-deploy-hexo-blog), 有在網路上幫助到其他人，所以決定還是來好好的把一些開發、學習過程筆記整理出來。
 
 要記的太多，只好寫下來吧。
