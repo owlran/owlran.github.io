@@ -11,15 +11,18 @@ import type { Frontmatter } from "src/types";
 import Socials from "@components/Socials.astro";
 
 const posts = await Astro.glob<Frontmatter>("../contents/**/*.md");
+const currentYear = new Date().getFullYear();
+const yearToStartBeingFE = 2015;
 
 const sortedPosts = getSortedPosts(posts);
+const featurePosts = sortedPosts.filter(post => post.frontmatter.featured);
 ---
 
 <Layout>
   <Header />
   <main id="main-content">
     <section id="hero">
-      <h1>Mingalaba</h1>
+      <h1>Hi 👋, I'm Aaron</h1>
       <a
         target="_blank"
         href="/rss.xml"
@@ -37,14 +40,9 @@ const sortedPosts = getSortedPosts(posts);
       </a>
 
       <p>
-        AstroPaper is a minimal, responsive and SEO-friendly Astro blog theme.
-        This theme is aimed to be accessible out of the box. Light and dark mode
-        are supported by default and additional color schemes can also be
-        configured. Read posts or see the <LinkButton
-          className="hover:text-skin-accent underline underline-offset-4 decoration-dashed"
-          href="https://github.com/satnaing/astro-paper#readme"
-          >documentation</LinkButton
-        > for more info.
+        Hi, 我是 Aaron, 在前端開發已有 {currentYear - yearToStartBeingFE}+
+        年的經驗，待過上市公司、小型新創以及軟體新創獨角獸，從 Vue 寫到
+        React，喜歡前端開發、架構、測試及效能議題。
       </p>
       <div class="social-wrapper">
         <div class="social-links">Social Links:</div>
@@ -53,24 +51,25 @@ const sortedPosts = getSortedPosts(posts);
     </section>
 
     <Hr />
-
-    <section id="featured">
-      <h2>Featured</h2>
-      <ul>
-        {
-          sortedPosts.map(
-            ({ frontmatter }) =>
-              frontmatter.featured && (
-                <Card
-                  href={`/posts/${slugify(frontmatter)}`}
-                  post={frontmatter}
-                  secHeading={false}
-                />
-              )
-          )
-        }
-      </ul>
-    </section>
+    {
+      featurePosts.length > 0 && (
+        <section id="featured">
+          <h2>Featured</h2>
+          <ul>
+            {featurePosts.map(
+              ({ frontmatter }) =>
+                frontmatter.featured && (
+                  <Card
+                    href={`/posts/${slugify(frontmatter)}`}
+                    post={frontmatter}
+                    secHeading={false}
+                  />
+                )
+            )}
+          </ul>
+        </section>
+      )
+    }
 
     <Hr />
 
