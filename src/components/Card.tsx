@@ -8,7 +8,7 @@ export interface Props {
 }
 
 const styles = {
-  cardContainer: "my-6",
+  cardContainer: "flex flex-col my-3 gap-0.5",
   titleLink:
     "text-skin-accent font-medium text-lg underline-offset-4 decoration-dashed focus-visible:no-underline focus-visible:underline-offset-0 inline-block",
   titleHeading: "font-medium text-lg decoration-dashed hover:underline",
@@ -25,7 +25,7 @@ export default function Card({ href, post, secHeading = true }: Props) {
         )}
       </a>
       <Datetime datetime={post.datetime} />
-      <p>{post.description}</p>
+      <p className="italic">{post.description}</p>
     </li>
   );
 }

@@ -1,4 +1,5 @@
 ---
+import { SITE } from "src/config";
 import Hr from "./Hr.astro";
 import Socials from "./Socials.astro";
 
@@ -6,9 +7,10 @@ const currentYear = new Date().getFullYear();
 
 export interface Props {
   noMarginTop?: boolean;
+  author: string;
 }
 
-const { noMarginTop = false } = Astro.props;
+const { noMarginTop = false, author = SITE.author } = Astro.props;
 ---
 
 <footer class={`${noMarginTop ? "" : "mt-auto"}`}>
@@ -17,7 +19,8 @@ const { noMarginTop = false } = Astro.props;
     <Socials centered />
     <div class="copyright-wrapper">
       <span>Copyright &#169; {currentYear}</span>
-      <span class="separator">&nbsp;|&nbsp;</span>
+      <span>{author}</span>
+      <span class="separator">|</span>
       <span>All rights reserved.</span>
     </div>
   </div>
@@ -37,7 +40,7 @@ const { noMarginTop = false } = Astro.props;
     @apply scale-125;
   }
   .copyright-wrapper {
-    @apply my-2 flex flex-col sm:flex-row items-center whitespace-nowrap;
+    @apply my-2 flex flex-col sm:flex-row items-center whitespace-nowrap gap-2;
   }
   .separator {
     @apply hidden sm:inline;

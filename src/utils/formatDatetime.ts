@@ -1,14 +1,13 @@
+const padZero = (n: number) => `${n}`.padStart(2, '0');
+
 const formatDatetime = (datetime: string) => {
-  const myDatetime = new Date(datetime);
-  return (
-    myDatetime.toLocaleDateString([], {
-      year: "numeric",
-      month: "long",
-      day: "numeric",
-    }) +
-    " | " +
-    myDatetime.toLocaleTimeString([], { hour: "2-digit", minute: "2-digit" })
-  );
+  const dateObj = new Date(datetime);
+  const year = dateObj.getFullYear();
+  const month = dateObj.getMonth() + 1;
+  const day = dateObj.getDate();
+
+  const yyyymmdd = `${year}/${padZero(month)}/${padZero(day)}`;
+  return yyyymmdd;
 };
 
 export default formatDatetime;

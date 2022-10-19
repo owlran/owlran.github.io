@@ -3,34 +3,17 @@ layout: ../layouts/AboutLayout.astro
 title: "About"
 ---
 
-AstroPaper is a minimal, responsive and SEO-friendly Astro blog theme. I designed and crafted this based on [my personal blog](https://satnaing.dev/blog).
+Hi, 我是 Aaron, 2015 開始專注在前端領域，待過上市公司、純軟新創，做過 IOT、專利搜尋及視覺化平台、MarTech，從 Vue 寫到 React，喜歡前端開發、架構、測試及效能議題。
 
-This theme is aimed to be accessible out of the box. Light and dark mode are supported by
-default and additional color schemes can also be configured.
-
-This theme is self-documented \_ which means articles/posts in this theme can also be considered as documentations. So, see the documentation for more info.
-
-<div>
-  <img src="/assets/dev.svg" class="sm:w-1/2 mx-auto" alt="coding dev illustration">
-</div>
+這個 Blog 是用 [Astro | Build faster websites](https://astro.build/) 架的，這幾年從 Hexo 、Gatsby，最近看到 Astro 竄起，試玩了決定最後落腳 Astro，主要作為 playground 和記錄一些在前端上的心得和學習的筆記等等。
 
 ## Tech Stack
 
-This theme is written in vanilla JavaScript (+ TypeScript for type checking) and a little bit of ReactJS for some interactions. TailwindCSS is used for styling; and Markdown is used for blog contents.
+- ReactJS, React Hooks, [React Hook Form](https://react-hook-form.com/)
+- TypeScript
+- VueJS
+- GraphQL, RESTful API
 
-## Features
+## 聯絡方式
 
-Here are certain features of this site.
-
-- fully responsive and accessible
-- SEO-friendly
-- light & dark mode
-- fuzzy search
-- super fast performance
-- draft posts
-- pagination
-- sitemap & rss feed
-- highly customizable
-
-If you like this theme, you can star/contribute to the [repo](https://github.com/satnaing/astro-paper).  
-Or you can even give any feedback via my [email](mailto:contact@satnaing.dev).
+如果有任何問題或者是想法歡迎來信 [email](mailto:owlran1088@gmail.com)，或在 [Github Repo](https://github.com/owlran/owlran.github.io) 留下 issue，感謝您的收看與建議 🙂
