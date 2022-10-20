@@ -10,8 +10,6 @@ tags:
 description:
   "讀完 astro 官方文件一點記錄"
 ---
-import islandImage from '/assets/islands.png'
-
 ## table of contents
 
 ## Core concepts
@@ -25,7 +23,6 @@ import islandImage from '/assets/islands.png'
 
 然後在 Astro 中比較特別的是，我們可以用不同的框架 (React, Vue, Svelte) 來 implement 每個 island
 
-![island image](../assets/islands.png)
 
 #### How do islands work in Astro ?
 
